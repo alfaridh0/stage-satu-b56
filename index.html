@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+      <div class="left">
+        <ul>
+          <img
+            class="logo"
+            src="./assets/images/dumbways.png"
+            alt="logo-image"
+          />
+
+          <li class="active">
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a id="myProject" href="./detailpage.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <a href="./form2.html">Contact Me</a>
+      </div>
+    </nav>
+    <div class="form-container">
+      <h2>Add My Project</h2>
+      <form onsubmit="addBlog(event)">
+          <div class="form-group">
+              <label for="inputProjectname">Project Name:</label>
+              <input type="text" id="inputProjectName" name="name" >
+          </div>
+          <div class="form-group">
+            <div class="form-group-date">
+              <div>
+                <label for="inputStartDate">Start Date:</label>
+                <input type="text" id="inputStartDate" name="startDate" >
+              </div>
+              <div>
+                <label for="inputEndDate">End Date:</label>
+                <input type="text" id="inputEndDate" name="endDate" >
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="description">Description:</label>
+              <textarea id="inputDescription" name="description"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="technologies">Technologies:</label>
+            <div class="checkbox-form">
+                <label for="nodeJS">
+                  <input type="checkbox" name="nodeJS"  value="nodeJs">Node Js
+              </label>
+              <label for="nextJs">
+                  <input type="checkbox" name="nextJs"  value="nextJs">Next Js
+              </label>
+              <label for="reactJs">
+                  <input type="checkbox" name="reactJs" value="reactJs">React Js
+              </label>
+              <label for="typeScript">
+                  <input type="checkbox" name="typeScript" value="typeScript">Typescript
+          </div>
+          <div class="form-group">
+            <label for="inputImage">Upload Image</label>
+            <input type="file" id="inputImage" name="inputImage" value="inputImage" >
+          </div>
+          <div class="form-group">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
+  <div class="blog">
+    <h2>My Project</h2>
+    <div class="blog-content" id="contents">
+      <!-- batas card -->
+      
+      
+      
+
+        <!-- batas card -->
+    </div>
+  </div>
+  <script src="assets/script/script.js"></script>
+  </body>
+</html>
