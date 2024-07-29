@@ -1,92 +1,58 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Personal Website</title>
+<head>
+    <title>Personal Web</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
-  </head>
-
-  <body>
+</head>
+<body>
     <nav>
-      <div class="left">
-        <ul>
-          <img
-            class="logo"
-            src="./assets/images/dumbways.png"
-            alt="logo-image"
-          />
-
-          <li class="active">
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a id="myProject" href="./detailpage.html">My Project</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="right">
-        <a href="./form2.html">Contact Me</a>
-      </div>
-    </nav>
-    <div class="form-container">
-      <h2>Add My Project</h2>
-      <form onsubmit="addBlog(event)">
-          <div class="form-group">
-              <label for="inputProjectname">Project Name:</label>
-              <input type="text" id="inputProjectName" name="name" >
-          </div>
-          <div class="form-group">
-            <div class="form-group-date">
-              <div>
-                <label for="inputStartDate">Start Date:</label>
-                <input type="text" id="inputStartDate" name="startDate" >
-              </div>
-              <div>
-                <label for="inputEndDate">End Date:</label>
-                <input type="text" id="inputEndDate" name="endDate" >
-              </div>
+        <div class="left">
+          <ul>
+            <img
+              class="logo"
+              src="./assets/images/dumbways.png"
+              alt="logo-image"
+            />
+  
+            <li class="active">
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a id="blog" href="./blog.html">Blog</a>
+            </li>
+            <li>
+                <a id="testimonial" href="./testimonial.html">Testimonial</a>
+              </li>
+          </ul>
+        </div>
+  
+        <div class="right">
+          <a href="./contact.html">Contact Me</a>
+        </div>
+      </nav>
+    <div style="border: 1px rgb(177, 144, 144) solid; width: 90%; height: 650px; margin: 20px auto; border-radius: 7px; padding: 5px; ">
+        <div style="margin: 10px 200px;">
+            <h1>Hi Welcome to my Hut</h1>
+            <p>Halo, nama saya Niken Alfrido D. Siboro, umur 24 tahun, dan berasal dari Medan. Saya adalah seorang mahasiswa di salah satu universitas di medan. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit sint, doloribus tenetur amet dignissimos expedita quod animi nisi blanditiis suscipit nihil, odit voluptatem molestiae quaerat ex aut assumenda earum similique?</p>
+            <button style=" padding: 5px 20px ; border-radius: 15px; background-color: black; color: white;" >contact</button>
+            <p>download CV <img style="margin-left: 10px; margin-bottom: -3px; width: 20px; height: 20px;" src="./assets/images/download.png" alt="download"></img> </p> 
+        </div>
+        <div style="margin: 20px 500px;">
+            <a href="https://www.linkedin.com" target="_blank"><img style="margin-left: 40px; width: 25px; height:25px; border-radius: 50%;" src="./assets/images/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.instagram.com" target="_blank"><img style="margin-left: 10px; width: 25px; height:25px; border-radius: 50%;" src="./assets/images/instagram.png" alt="linkedin"></a>
+            <a href="https://www.facebook.com" target="_blank"><img style="margin-left: 10px; width: 25px; height:25px; border-radius: 50%;" src="./assets/images/facebook.png" alt="linkedin"></a>
+            <a href="https://www.x.com" target="_blank"><img style="margin-left: 10px; width: 25px; height:25px; border-radius: 50%;" src="./assets/images/x.png" alt="linkedin"></a>
+            
+            <div style="width: 200px; height: 300px; margin: 10px; background-color: white; box-shadow:  0 8px 8px rgba(69, 59, 59, 0.1);">
+                <img 
+                src="./assets/images/profil.jpg" 
+                alt="profile img"
+                style="width: 200px; height: 250px; margin: auto; display: block; border-radius: 10px;"
+                />
+                <h4 style="margin: auto 15px;">Niken Alfrido D. Siboro</h4>
+                <h5 style="margin: auto 70px">Student</h5>
             </div>
-          </div>
-          <div class="form-group">
-              <label for="description">Description:</label>
-              <textarea id="inputDescription" name="description"></textarea>
-          </div>
-          
-          <div class="form-group">
-            <label for="technologies">Technologies:</label>
-            <div class="checkbox-form">
-                <label for="nodeJS">
-                  <input type="checkbox" name="nodeJS"  value="nodeJs">Node Js
-              </label>
-              <label for="nextJs">
-                  <input type="checkbox" name="nextJs"  value="nextJs">Next Js
-              </label>
-              <label for="reactJs">
-                  <input type="checkbox" name="reactJs" value="reactJs">React Js
-              </label>
-              <label for="typeScript">
-                  <input type="checkbox" name="typeScript" value="typeScript">Typescript
-          </div>
-          <div class="form-group">
-            <label for="inputImage">Upload Image</label>
-            <input type="file" id="inputImage" name="inputImage" value="inputImage" >
-          </div>
-          <div class="form-group">
-              <button type="submit">Submit</button>
-          </div>
-      </form>
-  </div>
-  <div class="blog">
-    <h2>My Project</h2>
-    <div class="blog-content" id="contents">
-      <!-- batas card -->
-      
-      
-      
-
-        <!-- batas card -->
+        </div>
     </div>
-  </div>
-  <script src="assets/script/script.js"></script>
-  </body>
+</body>
 </html>

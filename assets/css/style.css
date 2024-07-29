@@ -100,7 +100,7 @@ form button:hover {
 
 
 
-// form 
+/* form */
 
 body {
   font-family: Arial, sans-serif;
@@ -195,9 +195,6 @@ h2 {
   background-color: black;
   width: 20px;
 }
-#upload-image {
-  display: ;
-}
 
 
 
@@ -235,6 +232,7 @@ h2 {
 }
 .card a {
   text-decoration: none;
+  color: black;
 
 }
 .card img {
@@ -268,3 +266,47 @@ h2 {
 }
 
 
+/* nav */
+
+.hamburger-nav-link {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+.hamburger-active {
+  background-color: orangered;
+}
+
+#hamburger-button {
+  display: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hamburger-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #9a9a9a;
+  align-items: center;
+}
+
+@media only screen and (max-width: 660px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .navbar-contact-btn {
+    display: none;
+  }
+
+  #hamburger-button {
+    display: block;
+  }
+}

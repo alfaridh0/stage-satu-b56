@@ -10,6 +10,10 @@ function addBlog(event) {
     let startDate = document.getElementById("inputStartDate").value;
     let endDate = document.getElementById("inputEndDate").value;
     let description = document.getElementById("inputDescription").value;
+    let image = document.getElementById("inputImage").files;
+    
+  
+    image = URL.createObjectURL(image[0]);
 
 
     let blog = {
@@ -17,6 +21,7 @@ function addBlog(event) {
         startDate,
         endDate,
         description,
+        image
     };
 
     dataBlog.push(blog)
@@ -34,7 +39,7 @@ function renderBlog() {
     for(let i=0; i<dataBlog.length; i++) {
         document.getElementById("contents").innerHTML += `
         <div class="card">
-            <img src="./assets/images/portfolio.png" alt="gambar">
+            <img src=${dataBlog[i].image} alt="gambar">
             <a href="./detailpage.html">${dataBlog[i].title}</a>
             <p id="time">${dataBlog[i].startDate} - ${dataBlog[i].endDate}</p>
             <p id="description">${dataBlog[i].description}</p>  
